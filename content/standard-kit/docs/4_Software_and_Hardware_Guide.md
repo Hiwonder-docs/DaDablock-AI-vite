@@ -1,22 +1,22 @@
-# 4. Software and Hardware Guide
+﻿# 4. Software and Hardware Guide
 
 ## 4.1 ESP32 Controller
 
-### 4.1.1 Introduction to the ESP32 Controller
+### 4.1.1 ESP32 Controller Overview
 
-This is a smart controller powered by the ESP32 chip, supporting both block-based graphical programming and Python programming. Enclosed in a PC plastic shell, the board features integrated electronic modules including PWM servo ports, motor ports, programmable buttons, and a buzzer. It also features reserved sensor ports for high expandability. The uniform 4-pin anti-reverse ports make connecting with the full line of Hiwonder sensors convenient and safe.
+This is a smart controller based on the ESP32 core that supports both graphical programming and Python programming. Enclosed in a PC plastic shell, it features on-board electronic modules such as PWM servo ports, motor ports, programmable buttons, and a buzzer, along with multiple reserved sensor ports for high expandability. The standardized 4-pin anti-reverse ports fit the entire series of Hiwonder sensors, ensuring easy and safe operation.
 
-<div align="center"><img src="../_static/media/chapter_4/section_1/media/image1.png" width="200"></div>
+<img src="../_static/media/chapter_4/section_1/media/image1.png"  class="common_img" style="width:200px;" >
 
-### 4.1.2 ESP32 Controller Port Overview
+### 4.1.2 ESP32 Controller Interface Overview
 
-<div align="center"><img src="../_static/media/chapter_4/section_1/media/image2.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_1/media/image2.png"  class="common_img" style="width:600px;" >
 
 ### 4.1.3 ESP32 Controller Specifications
 
-| Parameter | Description |
-| :---: | :---: |
-| Product name | ESP32 controller |
+| Product Name | Details |
+| :--- | :--- |
+| Product name | ESP32 Controller |
 | Dimensions | 88.0 x 55.5 x 42.5 mm |
 | Charging voltage | 5 V |
 | Charging current | 1500 mA |
@@ -27,870 +27,1107 @@ This is a smart controller powered by the ESP32 chip, supporting both block-base
 
 ## 4.2 WonderCode Programming Software
 
-### 4.2.1 Platform Overview
+### 4.2.1 Software Installation Package
 
-WonderCode is a dedicated Scratch-based programming software tool for Hiwonder products. The software supports automatic conversion between graphical instruction blocks and Python code. Code can be written by dragging and dropping instruction blocks, making it highly suitable for beginners to learn programming.
+- [Windows(x64)](https://drive.google.com/file/d/1X8SvOM01UXOM2IvFwN_Ty7Ert5NPqZr8/view?usp=sharing)
 
-<div align="center"><img src="../_static/media/chapter_4/section_2/media/subsection_1/image1.png" width="800"></div>
+- [Mac](https://drive.google.com/file/d/1u-Yb7KiG7Qiu0cd9HIQbZjNCbts9Dzqv/view?usp=sharing)
 
-### 4.2.2 Platform Interface Overview
+### 4.2.2 Install Programming Software
 
-The diagram below illustrates the functional areas of the WonderCode software: ① Menu bar, ② Blocks area, ③ Script area, and ④ Code display and upload area.
+1. Open the **WonderCode setup.exe** software installation package.
 
-<div align="center"><img src="../_static/media/chapter_4/section_2/media/subsection_2/image1.png" width="800"></div>
+<img src="../_static/media/chapter_2/section_3/media/image1.png"  class="common_img" style="width:100px;" >
 
-The corresponding functions are described in the table below:
+2. Select the language, then click **OK**.
+
+<img src="../_static/media/chapter_2/section_3/media/image2.png"  class="common_img" style="width:400px;" >
+
+3. Select the installation location, then click **Next**.
+
+<img src="../_static/media/chapter_2/section_3/media/image3.png"  class="common_img" style="width:500px;" >
+
+4. Click **Next**.
+
+<img src="../_static/media/chapter_2/section_3/media/image4.png"  class="common_img" style="width:500px;" >
+
+5. Click **Install**.
+
+<img src="../_static/media/chapter_2/section_3/media/image5.png"  class="common_img" style="width:500px;" >
+
+<img src="../_static/media/chapter_2/section_3/media/image6.png"  class="common_img" style="width:500px;" >
+
+6. After successful installation, click **Finish**.
+
+<img src="../_static/media/chapter_2/section_3/media/image7.png"  class="common_img" style="width:500px;" >
+
+### 4.2.3 Programming Platform Overview
+
+WonderCode is a Scratch programming software tool designed specifically for Hiwonder products. The software supports automatic conversion between graphical command blocks and Python code. Programming can be performed by dragging and dropping command blocks, making it ideal for beginners learning to program.
+
+<img src="../_static/media/chapter_4/section_2/media/subsection_1/image1.png"  class="common_img" style="width:800px;" >
+
+### 4.2.4 Platform Interface Overview
+
+The figure below shows the functional areas of the WonderCode software, including ① Menu Bar, ② Command Area, ③ Script Area, and ④ Code Display and Upload Area.
+
+<img src="../_static/media/chapter_4/section_2/media/subsection_2/image1.png"  class="common_img" style="width:800px;" >
+
+The corresponding functions are listed in the table below:
 
 | Icon | Function |
 | :---: | :--- |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image2.png" width="100"> | Creates, saves, and opens program files. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image3.png" width="100"> | Used for online mode, which is only for informational purposes and does not need to be mastered. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image4.png" width="100"> | Connects or disconnects the device and software, and confirms the connection port. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image5.png" width="100"> | Provides access to help materials, software updates, and driver installation. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image6.png" width="200"> | Displays the program file name. If programming has not started or the file has not been saved, **Scratch Project** will be displayed. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image7.png" width="150"> | Interface switch button used to switch between **OnlineMode** and **UploadMode**. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image8.png" width="100"> | Selects the display language, with support for English. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image9.png" width="100"> | Undoes or redoes actions during programming. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image10.png" width="200"> | Switches the edit mode. **Auto** automatically converts block programs into Python format, while **Python Coding** allows direct editing in Python. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image11.png" width="100"> | Saves the program as Python code. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image12.png" width="100"> | Opens saved Python files. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image13.png" width="100"> | Enables device interaction and downloads programs to the controller. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image14.png" width="100"> | Adds device extension packages. |
-| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image15.png" width="100"> | Zooms in, zooms out, or restores the default size of the code editing interface. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image2.png"  class="inline-icon"> | Create, save, and open program files. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image3.png"  class="inline-icon"> | Used for online mode, only for reference without requiring mastery. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image4.png"  class="inline-icon"> | Determine whether to connect the device to the software and select the connection port. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image5.png"  class="inline-icon"> | Find help materials, check for updates, and install drivers. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image6.png"  class="inline-icon"> | Display the program file name, showing **Scratch Project** when programming has not started or the file is unsaved. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image7.png"  class="inline-icon"> | Interface switch button to toggle between **Online Mode** and **Upload Mode**. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image8.png"  class="inline-icon" style="width:100px;" > | Select the interface display language, supporting English, Simplified Chinese, and Traditional Chinese. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image9.png"  class="inline-icon"> | Undo or redo operations when writing programs. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image10.png"  class="inline-icon"> | Editing mode switch button. The **Auto** button converts block programs into Python format, and switching to **Python Coding** allows editing programs directly using Python. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image11.png"  class="inline-icon"> | Save the program as Python code. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image12.png"  class="inline-icon"> | Open saved Python files. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image13.png"  class="inline-icon"> | Perform device interaction to download the program to the controller board. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image14.png"  class="inline-icon"> | Used to add extension packages for the device. |
+| <img src="../_static/media/chapter_4/section_2/media/subsection_2/image15.png"  class="inline-icon"> | Zoom in, zoom out, and restore the default size of the code editing interface from top to bottom. |
 
-### 4.2.3 Basic Blocks Overview
-
-| Block | Category | Function Description |
-| :---: | :---: | :--- |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image1.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Pauses program execution for a specified duration before proceeding to the next instruction. This is used for action intervals and delay buffering. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image2.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Reads the total runtime of the device in milliseconds since powering on. This is used for timing and delay logic determination. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image3.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Runs the code inside the loop for a specified number of times and exits the loop upon completion. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image4.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Runs the nested instructions inside a loop indefinitely. The program continuously repeats the logic inside the loop. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image5.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Basic conditional statement. Executes the code inside if the condition is met. Otherwise, skips it. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image6.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Dual-branch conditional statement. Executes the code in the `then` branch if the condition is met. Otherwise, executes the code in the `else` branch. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image7.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Pauses program execution for a custom duration. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image8.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Repeatedly executes the code inside the loop until the specified condition is met, then exits the loop. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image9.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Terminates the current loop early and exits to execute the subsequent program. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image10.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Used inside a custom function to return specified data to the function caller. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image1.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Adds two values and returns the result. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image2.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Subtracts one value from another and returns the result. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image3.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Multiplies two values and returns the result. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image4.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Divides one value by another and returns the result. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image5.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Compares two numbers and returns a boolean value of true or false. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image6.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Logical AND operation. The overall result is true only when all conditions are met simultaneously. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image7.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Logical OR operation. The overall result is true if any of the conditions are met. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image8.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Logical NOT operation, which reverses the boolean value, making true become false and vice versa. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image9.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Boolean logical statement that evaluates the input condition as true or false, or performs a NOT operation. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image12.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Checks whether a specified element exists inside a list, tuple, or dictionary, and returns a boolean result. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image13.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Extracts the value associated with the specified key in a dictionary. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image14.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Linearly maps the input value from its original range to a target range to complete the value range conversion. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image10.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Enters or calls text content to generate string data that can be used for concatenation, logic checks, or display. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image15.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Concatenates two strings to output a combined text string. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image16.png" width="300"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Converts the input numerical value into text format, which is used for display or string concatenation. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image1.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Creates a custom variable to store a single piece of data, such as a number or text. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image3.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Reads the data stored in a variable for operations such as calculation, comparison, or output. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image4.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Assigns a value to the specified variable, overwriting the original data. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image6.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Increments a numerical variable by adding a specified number to its current value. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image2.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Creates an empty list with a custom name to store multiple sets of data. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image8.png" width="100"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Generates an empty list container that can hold various types of data, such as numbers and text, for subsequent operations. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image11.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Clears all stored elements in the target list to reset it. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image12.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Inserts custom content at the specified index in the target list. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image4.png" width="250"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Creates a custom function block, sets the function name, and defines input parameters of number or text type to package and reuse program logic. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image5.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Provides a number or text parameter input value for the custom function. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image6.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Calls the defined custom function block to execute the encapsulated program code. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image2.png" width="150"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Creates a custom function block to encapsulate a segment of reusable program logic. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image3.png" width="100"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Calls the defined custom function to execute the encapsulated program code. |
-
-### 4.2.4 ESP32 Controller Extension Library Blocks Overview
+### 4.2.5 Basic Blocks Overview
 
 | Block | Category | Function Description |
 | :---: | :---: | :--- |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image1.png" width="200"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | The main program loop container. It continuously executes the code inside in a loop after the power-on initialization is completed. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image2.png" width="200"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Executes only once after the device is powered on. This is used for startup logic such as hardware initialization and parameter configuration. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image3.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Drives the buzzer to play music of a specified pitch and beat. Running in background mode does not block the execution of subsequent programs. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image4.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Adjusts the volume of the buzzer, with a range of 0 to 100. Larger values indicate higher volume. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image5.png" width="200"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Stops the buzzer from sounding immediately, terminating the currently playing tone or music. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image6.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Controls the RGB light at the specified index, or all RGB lights, to light up in the selected color. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image7.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Customizes the light color using RGB three-channel values to control the corresponding RGB light to output mixed color light. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image8.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Makes the specified RGB light perform a brightness-fading breathing effect in the selected color, with a customizable dimming cycle. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image9.png" width="300"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Enables the flowing RGB lighting effect that automatically cycles through a multi-color gradient. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image10.png" width="300"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Turns off the specified RGB light or all RGB lights to cut off the light output. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image11.png" width="300"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Prints custom text strings to the computer through the serial port to view debugging information. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image12.png" width="300"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Prints specified numerical values to the computer through the serial port for data debugging. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image13.png" width="300"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Immediately stops the rotation of the 360° block servo on the specified port. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image14.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Controls the 360° block servo on the specified port to rotate continuously at a custom speed. |
-| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image15.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Controls the 270° block servo on the specified port to rotate smoothly to the target angle within a set duration, automatically waiting for the servo to complete the action. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image1.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Pause the program for a specified duration before executing subsequent code, used for action intervals and delay buffering. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image2.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Read the total running time in milliseconds since the device was powered on, used for timing and delay judgment logic. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image3.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Limit the code execution inside the loop to run a specified number of times, and exit the loop when completed. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image4.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Run the nested blocks inside the loop infinitely, repeating internal loop logic continuously. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image5.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Basic conditional judgment. Execute internal code when the condition is met, and skip directly when not met. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image6.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Two-branch conditional judgment. Execute code inside "then" when the condition is met, and execute code inside "else" when not met. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image7.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Customize the input delay value to pause the program for the corresponding duration. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image8.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Execute internal code repeatedly in a loop until the specified condition is met to exit the loop. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image9.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Terminate the current loop structure early and exit the loop directly to execute subsequent programs. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_1/image10.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_1/image.png"> | Used inside custom functions to return specified data to the function caller. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image1.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Perform addition on two values and return the result. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image2.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Perform subtraction on two values and return the result. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image3.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Perform multiplication on two values and return the result. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image4.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Perform division on two values and return the result. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image5.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Compare the size of two numbers and return a boolean value representing whether the comparison is true or false. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image6.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Logical AND operation. The overall result is true only when all conditions are met. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image7.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Logical OR operation. The overall result is true if any of the conditions are met. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image8.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Boolean NOT operation to invert the original true or false condition. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image9.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Boolean logical judgment to determine whether input conditions are true or false, or perform a NOT operation. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image12.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Determine whether a specified element exists in an array, tuple, or dictionary, and return a boolean result. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image13.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Extract corresponding stored numerical or text content from a dictionary according to a specified key name. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image14.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Linearly convert and map input values from the original numerical range to the target range to complete value range conversion. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image10.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Customize input or call text content to generate string data for concatenation, judgment, and display. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image15.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Concatenate and merge two text strings to output complete combined text. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_2/image16.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_2/image.png"> | Convert input numerical values into corresponding text character formats, used for text display and string concatenation scenarios. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image1.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Create a custom-named variable container to store single pieces of data such as numbers or text. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image3.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Read data stored inside created variables, which can participate in operations, judgments, and output operations. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image4.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Assign a value to a specified variable to overwrite original data and modify variable content to the set value. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image6.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Perform self-increment operations on numerical variables, adding specified numbers to original values. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image2.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Create a blank list with a custom name to store multiple sets of data in batches. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image8.png" style="width:100px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Generate a blank list container to store multiple types of data such as numbers and text for subsequent adding, deleting, modifying, and querying operations. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image11.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Clear all stored elements in the target list to reset the list to an empty list. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_3/image12.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_3/image.png"> | Insert custom content in front of the element at the specified index in the target list to complete list element insertion. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image4.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Customize and create function blocks, set function names and input parameters of number or text types, used to encapsulate a segment of program logic for reuse. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image5.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Provide number or text type parameter input values for custom functions for internal program calls inside functions. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image6.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Call defined custom function blocks to execute all program code encapsulated inside that function. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image2.png" style="width:100px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Create custom function blocks to encapsulate a segment of repeatable program logic. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_4/image3.png" style="width:100px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_4/image.png"> | Call defined custom functions to execute all programs encapsulated inside the function. |
 
-<p id ="anther4.3"></p>
+### 4.2.6 ESP32 Controller Extension Library Overview
 
-## 4.3 Electronic Modules Overview
+| Block | Category | Function Description |
+| :---: | :---: | :--- |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image1.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Main program loop container. Continuously execute internal code after power-on initialization is completed. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image2.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Execute only once after device power-on, used to place power-on logic such as hardware initialization and parameter configuration. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image3.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Drive the buzzer to play music of specified pitch and beat, without blocking subsequent program execution when running in background mode. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image4.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Adjust buzzer volume with value range 0 to 100, where larger values indicate higher volume. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image5.png" style="width:100px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Stop buzzer sound immediately, terminating currently playing tone or music. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image6.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Control specified index or all RGB lights to turn on and light up in selected color. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image7.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Customize light color through RGB three-channel values to control corresponding lights to output mixed color light. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image8.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Make specified RGB lights execute brightness gradient breathing effects in selected color with customizable light and dark transition cycles. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image9.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Turn on flowing colorful light effects where RGB lights automatically and cyclically transition through multiple colors. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image10.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Turn off specified index or all RGB lights to cut off light output. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image11.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Print and output custom text strings to computer via serial port, used for debugging and viewing information. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image12.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Print and output specified numerical values to computer via serial port, used for data debugging and printing. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image13.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Terminate rotation of 360° servos at specified ports immediately to stop servo operation. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image14.png" style="width:200px;"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Control 360° servos at specified ports to rotate continuously at custom set speeds. |
+| <img src="../_static/media/chapter_3/section_0/media/subsection_5/image15.png"> | <img src="../_static/media/chapter_3/section_0/media/subsection_5/image.png"> | Control 270° servos at specified ports to rotate smoothly to target angles within set durations with automatic delay waiting for servos to complete action. |
+
+<a id ="section-4-3"></a>
+
+## 4.3 Electronic Module Tutorials
 
 ### 4.3.1 360° Block Servo
 
-#### 1. Introduction
+#### (1) Overview
 
-This is a servo compatible with various LEGO building block components. PWM, or Pulse Width Modulation, is generally used for control. It is a continuous rotation servo whose rotation speed and direction can be controlled via PWM signals, although the specific rotation angle cannot be controlled.
+This is a servo compatible with various LEGO building block components. During operation, pulse width modulation, also known as PWM, is generally used for control. It is a continuous rotation servo where rotation speed and direction can be controlled through PWM signals, but specific rotation angles cannot be controlled.
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_1/image1.png" width="200"></div>
+<img src="../_static/media/chapter_4/section_3/media/subsection_1/image1.png"  class="common_img" style="width:200px;" >
 
-#### 2. Specifications
+#### (2) Specifications
 
-| Parameter | Description |
-| :---: | :---: |
-| Operating voltage | 4.8-6 V DC |
-| Rated torque | 1 N·m |
+| Parameter | Details |
+| :--- | :--- |
+| Operating voltage | DC 4.8-6 V |
+| Rated torque | 1N·m |
 | Rotation range | 0° to 360° |
 | Cable length | 25 cm |
-| Dimensions | 40 x 16 mm |
+| Dimensions | 40 × 16 mm |
 
-#### 3. Wiring Diagram
+#### (3) Wiring Diagram
 
-Connect the 360° servo to the controller ports S1 to S6. Note that the yellow wire connects to S, the red wire connects to 5V, and the brown wire connects to GND, as shown in the diagram below:
+Connect the 360° block servo to controller ports **S1~S6**. Pay attention that the **orange** wire connects to **S**, the **red** wire connects to **5 V**, and the **brown** wire connects to **GND**, as shown in the figure below:
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_1/image2.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_3/media/subsection_1/image2.png"  class="common_img" style="width:300px;" >
 
-#### 4. Hands-on Practice
+#### (4) Practical Examples
 
-**Case: Timed Forward and Reverse Servo Rotation**
+Case: Servo Forward and Reverse Rotation with Delay Start and Stop
+Program logic: After downloading the program, the 360° block servo will rotate forward at a speed of 50 for 2 seconds, rotate backward for 2 seconds, and finally stop.
 
-**Program Logic:** Once the program starts running, the 360° block servo rotates forward at a speed of 50 for 2 seconds, then rotates backward for 2 seconds, and finally stops.
+<img src="../_static/media/chapter_4/section_3/media/subsection_1/image3.png"  class="common_img" style="width:500px;" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_1/image3.png" width="450"></div>
-
-**Program Upload Instructions:** Follow the steps shown in the GIF: click **Connect device**, select the port, and then click the upload icon to complete the program upload. Once finished, proceed to test the program's execution.
+Program download instructions: Follow the animated image to click **Connect device**, select the port, then click the upload button to complete the program download and test the program execution effect.
 
 <img src="../_static/media/chapter_2/section_4/media/image6.gif"  class="common_img" style="width:800px;" >
 
 > [!NOTE]
 >
-> * **The block `Set servo ID S1 rotate at a speed of 50` is used in the program because a PWM signal is required to control the rotation of the 360° block servo. Since the PWM output ports on the controller are S1 to S6, the S1 port is used here to send the signal to the servo.**
-> * **The source files are available for download as a zip archive under [1. Source Code / 01 Program Files for Sensors](https://drive.google.com/drive/folders/11p36JV_E-lObXeoHPkrtIhoMU-Q2H3ye?usp=sharing).**
+> * **The program in the figure uses the block Set Servo S1 to Rotate at Speed 50 because PWM signals are required to control the rotation of the 360° block servo. Since the PWM signal output ports on the controller are `S1` to `S6`, port `S1` is used here to send signals to the 360° block servo.**
+>
+> * **The source files are available for download under [1. Source Code / 03 Program Files for Starter Projects](https://drive.google.com/drive/folders/1C_cT51H9adfUnSPw9l57vPrQQ2A_vUBa?usp=sharing).**
+>
 
 ### 4.3.2 270° Block Servo
 
-#### 1. Introduction
+#### (1) Overview
 
-This is a servo compatible with various LEGO building block components. PWM, or Pulse Width Modulation, is generally used for control. It is a limited-rotation servo, meaning that while the rotation angle can be controlled, it has a limited range from 0° to 270°.
+This is a servo compatible with various LEGO building block components. During operation, pulse width modulation, also known as PWM, is generally used for control. It is a limited rotation servo, meaning the servo can control the rotation angle within a limited range from 0° to 270°.
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_2/image1.png" width="200"></div>
+<img src="../_static/media/chapter_4/section_3/media/subsection_2/image1.png"  class="common_img" style="width:200px;" >
 
-#### 2. Specifications
+#### (2) Specifications
 
-| Parameter | Description |
-| :---: | :---: |
-| Operating voltage | 4.8-6 V DC |
-| Rated torque | 1 N·m |
+| Parameter | Value |
+| :--- | :--- |
+| Operating voltage | DC 4.8-6 V |
+| Rated torque | 1N·m |
 | Rotation range | 0° to 270° |
 | Cable length | 25 cm |
-| Dimensions | 40 x 16 mm |
+| Dimensions | 40 × 16 mm |
 
-#### 3. Wiring Diagram
+#### (3) Wiring Diagram
 
-Connect the 270° servo to the controller ports S1 to S6. Note that the yellow wire connects to S, the red wire connects to 5V, and the brown wire connects to GND, as shown in the diagram below:
+Connect the 270° servo to controller ports **S1~S6**. Pay attention that the **orange** wire connects to **S**, the **red** wire connects to **5 V**, and the **brown** wire connects to **GND**, as shown in the figure below:
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_2/image2.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_3/media/subsection_2/image2.png"  class="common_img" style="width:300px;" >
 
-#### 4. Hands-on Practice
+#### (4) Practical Examples
 
-**Case: 270° Servo Timed Multi-Angle Rotation**
+Case: 270° Servo Multi-angle Delayed Rotation
+Program logic: After downloading the program, the 270° block servo first rotates to 135°, rotates to 0° after 2 seconds, rotates to 270° after 2 seconds, and stops after 2 seconds.
 
-**Program Logic:** Once the program starts running, the 270° block servo rotates to 135° first. After 2 seconds, it rotates to 0°. After another 2 seconds, it rotates to 270°, and then stops after 2 seconds.
+<img src="../_static/media/chapter_4/section_3/media/subsection_2/image3.png"  class="common_img" style="width:500px;" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_2/image3.png" width="600"></div>
-
-**Program Upload Instructions:** Follow the steps shown in the GIF: click **Connect device**, select the port, and then click the upload icon to complete the program upload. Once finished, proceed to test the program's execution.
+Program download instructions: Follow the animated image to click **Connect device**, select the port, then click the upload button to complete the program download and test the program execution effect.
 
 <img src="../_static/media/chapter_2/section_4/media/image6.gif"  class="common_img" style="width:800px;" >
 
 > [!NOTE]
 >
-> * **The 270° servo must be reset to its initial position before use.**
-> * **The source files are available for download as a zip archive under [1. Source Code / 01 Program Files for Sensors](https://drive.google.com/drive/folders/11p36JV_E-lObXeoHPkrtIhoMU-Q2H3ye?usp=sharing).**
+> * **Initial reset must be performed before using the 270° servo.**
+>
+> * **The source files are available for download under [1. Source Code / 03 Program Files for Starter Projects](https://drive.google.com/drive/folders/1C_cT51H9adfUnSPw9l57vPrQQ2A_vUBa?usp=sharing).**
+>
 
 ### 4.3.3 Dot Matrix Module
 
-#### 1. Introduction
+#### (1) Overview
 
-This is an LED dot matrix screen display module, featuring high brightness, flicker-free display, and easy wiring. It can display numbers, text, patterns, and other content. The module also features onboard LEGO-compatible holes for more creative DIY designs.
+This is an LED dot matrix display module featuring high display brightness, flicker-free display, and convenient wiring, which can display numbers, text, patterns, and other content. The module also integrates LEGO-compatible holes to support more creative DIY designs.
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_3/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_3/media/subsection_3/image1.png"  class="common_img" style="width:300px;" >
 
-#### 2. Specifications
+#### (2) Specifications
 
-| Parameter | Description |
-| :---: | :---: |
-| Operating voltage | 5 V DC |
+| Parameter | Details |
+| :--- | :--- |
+| Operating voltage | DC 5 V |
 | Operating current | 45 mA |
-| Matrix pixels | 8 x 16 dot matrix |
+| Matrix pixels | 8×16 dot matrix |
 | Matrix brightness | 8 adjustable brightness levels |
-| Connector type | 5264-4AW |
-| Dimensions | 55.5 x 23.5 x 18.1 mm |
+| Interface model | 5264-4AW |
+| Dimensions | 55.5 × 23.5 × 18.1 mm |
 
-#### 3. Wiring Diagram
+#### (3) Wiring Diagram
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_3/image2.png" width="400"></div>
+<img src="../_static/media/chapter_4/section_3/media/subsection_3/image2.png"  class="common_img" style="width:400px;" >
 
-- Connecting the module to ports 5, 6, 7, or 8 on the controller is supported.
+- **It supports connection to any port among P5, P6, P7, and P8 on the controller.**
 
-#### 4. Hands-on Practice
+#### (4) Practical Examples
 
-**Case: Looping Graphics and Text on the Dot Matrix Display**
+Case: Dot Matrix Screen Loop Graphic and Text Display
+Program logic: After downloading the program, control the dot matrix screen to cycle through displaying "Hi", "123", and "❤".
 
-**Program Logic:** Once the program starts running, the dot matrix screen switches to display `Hi`, 123, and a heart pattern.
+<img src="../_static/media/chapter_4/section_3/media/subsection_3/image3.png"  class="common_img" style="width:500px;" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_3/image3.png" width="500"></div>
-
-**Program Upload Instructions:** Follow the steps shown in the GIF: click **Connect device**, select the port, and then click the upload icon to complete the program upload. Once finished, proceed to test the program's execution.
+Program download instructions: Follow the animated image to click **Connect device**, select the port, then click the upload button to complete the program download and test the program execution effect.
 
 <img src="../_static/media/chapter_2/section_4/media/image6.gif"  class="common_img" style="width:800px;" >
 
 > [!NOTE]
 >
-> - **When using the dot matrix module, initializing its port at startup is required.**
-> - **The source files are available for download as a zip archive under [1. Source Code / 01 Program Files for Sensors](https://drive.google.com/drive/folders/11p36JV_E-lObXeoHPkrtIhoMU-Q2H3ye?usp=sharing).**
+> * **When using the dot matrix module, initialization of the dot matrix module interface is required at startup.**
 >
-
-<p id ="anther4.4"></p>
+> * **The source files are available for download under [1. Source Code / 03 Program Files for Starter Projects](https://drive.google.com/drive/folders/1C_cT51H9adfUnSPw9l57vPrQQ2A_vUBa?usp=sharing).**
+>
 
 ### 4.3.4 Fan Module
 
-#### 1. Introduction
+#### (1) Overview
 
-This is a fan module with adjustable rotation speed that does not require an additional motor driver board. It can be paired with a temperature sensor to create a smart fan device, enabling automatic fan speed adjustment based on temperature. Additionally, the module features onboard LEGO-compatible holes for more creative DIY designs.
+This is a fan module that does not require an additional motor driver board, featuring adjustable rotation speed. Combining it with a temperature sensor allows the creation of a smart fan device that automatically adjusts fan speed based on different temperatures. Meanwhile, the module integrates LEGO-compatible holes on the board for more creative DIY designs.
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_4/image1.png" class="common_img" width="300"></div>
+<img src="../_static/media/chapter_4/section_3/media/subsection_4/image1.png"  class="common_img" style="width:300px;" >
 
-#### 2. Specifications
+#### (2) Specifications
 
-| Parameter | Description |
-| :---: | :---: |
+| Parameter | Details |
+| :--- | :--- |
 | Operating voltage | DC 5 V |
-| Control method | PWM control |
-| Connector type | 5264-4AW |
-| Dimensions | 64.3 x 41.8 x 25.0 mm |
+| Control method | PWM pulse control |
+| Interface model | 5264-4AW |
+| Dimensions | 64.3 × 41.8 × 25.0 mm |
 
-#### 3. Wiring Diagram
+#### (3) Wiring Diagram
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_4/image2.png" class="common_img" width="300"></div>
+<img src="../_static/media/chapter_4/section_3/media/subsection_4/image2.png"  class="common_img" style="width:400px;" >
 
-- It supports connection to ports 5, 6, 7, and 8 on the controller.
+- **It supports connection to any port among P5, P6, P7, and P8 on the controller.**
 
-#### 4. Hands-on Practice
+#### (4) Practical Examples
 
-**Case: Timed Fan Control**
+Case: Fan Timed Start and Stop Control
+Program logic: After downloading the program, the fan rotates at a speed of 60, and stops rotating after 10 seconds.
 
-**Program Logic:** Once the program is downloaded, the fan rotates at a speed of 60 and stops after 10 seconds.
+<img src="../_static/media/chapter_4/section_3/media/subsection_4/image3.png"  class="common_img" style="width:500px;" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_3/media/subsection_4/image3.png" class="common_img" width="400"></div>
+Program download instructions: Follow the animated image to click **Connect device**, select the port, then click the upload button to complete the program download and test the program execution effect.
 
-**Program Upload Instructions:** Follow the steps shown in the GIF: click **Connect device**, select the port, and then click the upload icon to complete the program upload. Once finished, proceed to test the program's execution.
-
-<div align="center"><img src="../_static/media/chapter_2/section_4/media/image6.gif" class="common_img" width="800"></div>
+<img src="../_static/media/chapter_2/section_4/media/image6.gif"  class="common_img" style="width:800px;" >
 
 > [!NOTE]
 >
-> - **When using the fan module, connecting to either port 5 or port 8 is recommended to prevent the fan from rotating upon power-on due to the initial high level of the controller ports.**
-> - **The source files are available for download as a zip archive under [1. Source Code / 01 Program Files for Sensors](https://drive.google.com/drive/folders/11p36JV_E-lObXeoHPkrtIhoMU-Q2H3ye?usp=sharing).**
+> * **When using the fan module, connecting to either port P5 or P8 is recommended to avoid fan rotation upon power-on caused by the initial high electrical level of controller ports.**
+>
+> * **The source files are available for download under [1. Source Code / 03 Program Files for Starter Projects](https://drive.google.com/drive/folders/1C_cT51H9adfUnSPw9l57vPrQQ2A_vUBa?usp=sharing).**
 >
 
-<p id ="anther4.4"></p>
+
+
+<a id ="section-4-4"></a>
 
 ## 4.4 WonderLLM Module
 
-<p id ="anther4.4.1"></p>
+### 4.4.1 Module Overview
 
-### 4.4.1 Module Introduction
+#### 1. Module Introduction
 
-#### 1. Module Overview
+WonderLLM is a large AI model module featuring a built-in ESP32-S3 high-performance chip. It integrates a 2-megapixel HD camera, microphone, HD display screen, speaker, and CI1302 voice recognition chip, deeply integrating multimodal models including text, voice, and vision.
 
-WonderLLM is an AI large language model, or LLM, module. It features an integrated ESP32-S3 high-performance chip, a 2-megapixel high-definition camera, a microphone, a high-definition display, a speaker, and a CI1302 voice recognition chip, deeply integrating multimodal models such as text, voice, and vision.
+Featuring easy operation, the module is often paired with robots, providing robots with a super brain that deeply understands commands and delivers outstanding perception, reasoning, and action capabilities to create flexible and natural human-robot interaction experiences.
 
-This module is easy to operate and is commonly paired with robots. This equips the robot with a super brain, enabling a deep understanding of commands and granting exceptional perception, reasoning, and action capabilities to create a flexible and natural human-robot interaction experience.
+<img src="../_static/media/chapter_4/section_4/media/subsection_1/1.png" class="common_img" style="width:300px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_1/image1.png" width="300"></div>
+#### 2. Operating Principles
 
-#### 2. Operating Principle
+- The module adopts a voice command wake-up mode, requiring the wake word to be spoken to wake up WonderLLM, after which human-machine interaction can begin. To switch to English recognition, the English recognition firmware must be flashed. After switching to the English firmware, the English wake keyword is **Hello Hiwonder**.
 
-The module uses a voice command wake-up mode to activate human-robot interaction. Flashing the English voice recognition firmware is required to enable English voice recognition. Once flashed, the wake word is **Hello Hiwonder**.
-
-Once the wake word is recognized, the buzzer sounds once, and then interaction can begin. The module supports communication in different languages, automatically identifying the language spoken and switching accordingly. If no voice is recognized within 1 minute, the module enters sleep mode, requiring it to be woken up again for subsequent use.
+- Once the module recognizes the wake word, the buzzer beeps once, after which interaction can begin. The module supports communication in English. If no voice is recognized within 1 minute, sleep mode is entered, requiring another wake-up command for subsequent use.
 
 #### 3. Hardware Interface Overview
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_1/image2.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_1/2.png" class="common_img" style="width:500px" >
 
-| No. | Description |
+| Number | Description |
 | :---: | :--- |
-| 1 | Top Type-C port, used to flash firmware for the ESP32-S3 chip |
-| 2 | Bottom Type-C port, used to flash voice recognition firmware for the CI1302 chip |
-| 3 | 4-pin I2C communication port, which can be used for secondary development |
-| 4 | Capacitive touch screen, used to display images and adjust the volume |
-| 5 | Left button, used to switch between Expression and Chat modes |
-| 6 | High-definition camera, which can capture real-time images |
-| 7 | Right button, used for network configuration and interaction control |
+| 1 | Type-C interface, top, used for flashing program firmware to the ESP32-S3 chip |
+| 2 | Type-C interface, bottom, used for flashing voice recognition firmware to the CI1302 chip |
+| 3 | 4-PIN I2C communication interface, available for secondary development |
+| 4 | Capacitive touch screen, used to display images and adjust volume |
+| 5 | Left button, used for switching module expressions or chat modes |
+| 6 | HD camera, capable of capturing real-time images |
+| 7 | Right button, used for module network configuration and interaction control |
 
-#### 4. Important Notes
+#### 4. Notes
 
-1. Use a 5V power supply. Otherwise, the module may be damaged.
+1. Use a 5 V power supply, otherwise the module will be damaged.
 
-2. Use the module in a quiet environment, as background noise will affect recognition performance.
+2. Ensure a quiet operating environment, as noisy environments will affect recognition performance.
 
-3. Speak clearly and loudly at a moderate speed. It is recommended to stay within 5 meters of the module.
+3. Speak commands clearly and at a moderate pace, maintaining a distance within 5 meters from the module.
 
-<p id ="anther4.4.2"></p>
+### 4.4.2 Module Configuration
 
-### 4.4.2 Network Connection and Configuration
+<a id ="section-4-4-2-1"></a>
 
-<p id ="anther4.4.1.1"></p>
+#### (1) Power On
 
-#### 4.4.2.1 Module Network Connection
+1. The module supports power supply through the following interfaces: **① the top Type-C interface**, **② the bottom Type-C interface**, and **③ 4-PIN I2C communication interface**. Select any interface to connect an external power supply, and the module powers on automatically.
 
-> [!NOTE]
->
-> **Connecting the module to the network is required in three situations: 1. During initial use or after flashing the firmware, when no Wi-Fi credentials are saved in memory. 2. When no hotspot in the environment matches the saved Wi-Fi connection information, as described in [2.1.2 Module Network Configuration](https://wiki.hiwonder.com/projects/DaDablock-AI/en/standard-kit/docs/2_Quick_Start.html#module-network-configuration). 3. When manually entering network configuration mode by long-pressing the right button B.**
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/1.png" class="common_img" style="width:300px" >
 
-- **<font size="4px">Manually Enter Network Configuration Mode</font>**
+2. After power-on, the screen displays the **Device Hotspot Name** and **Browser Network Configuration URL**, accompanied by voice announcements. Follow the [Module Network Connection](#section-4-4-2-2) section to complete module networking first.
 
-1. The WonderLLM module supports manually entering network configuration mode to allow custom selection of hotspots for connection.
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/2.png" class="common_img" style="width:300px" >
 
-2. After powering on the module, long-press the **right button** to restart the module. The screen will turn off. Keep holding the button. Once the module restarts and begins trying to connect, a white circular loading bar will appear on the screen. The module will detect that the **right button** is still being held, stop matching saved hotspots, and enter network configuration mode. The button can now be released.
+3. After network configuration, binding with the platform agent is required. The module screen displays the **Device ID** and **Device Binding Platform URL,** accompanied by voice announcements of the binding verification code. Follow the [Device Binding](#section-4-4-2-3) section to complete module device binding.
 
-3. Existing Wi-Fi configurations will not be lost. The network can be configured via the page, or the **right button** can be short-pressed to exit network configuration mode.
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/3.png" class="common_img" style="width:300px" >
 
-4. After exiting network configuration mode, the module will continue to attempt to connect using the saved Wi-Fi configurations. If it cannot connect to any saved hotspot, it will re-enter network configuration mode.
+4. After power-on, if device binding is completed, a white circular progress bar is displayed on the screen while the module automatically connects to the network using internal Wi-Fi information. If the network connection fails, the screen displays the **Device Hotspot Name** and **Browser Network Configuration URL**, accompanied by voice announcements. Follow the [Module Network Connection](#section-4-4-2-2) section to configure new Wi-Fi connection information available in the current environment again.
 
-- **<font size="4px">Manage Saved Connection Configurations</font>**
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/4.png" class="common_img" style="width:300px" >
 
-1. When the module is in network configuration mode, connecting to the module's hotspot and accessing the network configuration interface will display a list of all saved hotspot connections, if any were previously configured, as shown below:
+5. After power-on, if device binding is completed and configured Wi-Fi information is available in the current environment, the network connects successfully after the white circular progress bar loads, jumping to the module expression display interface. All module configurations are normal at this point, and human-machine interaction can begin after waking up the module.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/image1.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_1/1.png" class="common_img" style="width:300px" >
 
-2. Clicking the delete icon <img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/image2.png" width="50"> next to any saved hotspot deletes it. Clicking the up arrow icon <img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/image3.png" width="50"> raises its priority during network matching, with priority decreasing from top to bottom.
+<a id ="section-4-4-2-2"></a>
 
-<p id ="anther4.4.1.2"></p>
+#### (2) Module Network Connection
 
-#### 2. Device Binding
+- **Operation Description**
 
-> [!NOTE]
->
-> **Two methods are available for device binding: 1. Quick binding, which is described in [2.1.3 Device Binding](https://wiki.hiwonder.com/projects/DaDablock-AI/en/standard-kit/docs/2_Quick_Start.html#device-binding). 2. Binding by creating a new AI agent.**
+Three situations cause the module to enter network configuration mode: ① initial module use or firmware reflashing without saved Wi-Fi connection information in memory, ② no matching hotspot in the current environment for stored Wi-Fi connection information, and ③ manual operation entering network configuration mode by long pressing button B.
 
-- **<font size="4px">Bind by Creating a New Agent</font>**
+- **Operation Steps**
 
-1. Open a browser and go to `hiwonder.ai`, or click the [WonderHUB AI Chatbot](https://hiwonder.ai/) link directly. Log in to the WonderHUB AI platform account. If no account exists, refer to [2.1.3 Device Binding](https://wiki.hiwonder.com/projects/DaDablock-AI/en/standard-kit/docs/2_Quick_Start.html#device-binding) to register.
+1. Network connection starts after module power-on. The screen displays **Device Hotspot Name** and **Browser Network Configuration URL** accompanied by voice announcements. The large model module opens its built-in hotspot for connection configuration. Hotspot names differ across devices with a unified format **Robot-xxxx**. The hotspot Robot-B7B9 is used as an example below.
 
-2. Click **Agents** on the left menu to switch to the agents interface.
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/2.png" class="common_img" style="width:300px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image1.png" width="1500"></div>
+2. Search for the corresponding hotspot using a computer or phone and connect, noting that the hotspot has no password.
 
-3. Click **Create Agent** to open the agent creation page.
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/1.png" class="common_img" style="width:400px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image2.png" width="1500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/2.png" class="common_img" style="width:400px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image3.png" width="1500"></div>
+3. Click the hyperlink [Network Configuration](http://192.168.4.1/) to access the device network configuration URL directly, or copy the URL below and open any browser to enter the device network configuration URL.
 
-4. Agents created by others can be copied using role codes. Simply paste the role code into the input field and click **Apply Code**.
+```py
+http://192.168.4.1
+```
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image4.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/3.png" class="common_img" style="width:800px" >
 
-5. The agent's avatar can be customized. Set the agent's name to **Hiwonder**, matching the name of the wake word. Designate this agent as the default agent, as the device binds to the default agent by default.
+4. Enter the hotspot name for automatic connection upon power-on in field ① in the figure below, and enter the hotspot connection password in field ②. Finally click **Connect** in field ③. The module attempts to find matching hotspots in the current environment and connect based on the provided hotspot information.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image5.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/4.png" class="common_img" style="width:800px" >
 
-6. In the conversation model settings, it is recommended to select **grok-4.3** as the language model. Detailed parameters can be adjusted in the advanced settings, or the default settings can be kept.
+5. A list of available hotspots in the current environment scanned by the module can be found in the interface. Click any item to automatically fill the corresponding hotspot name into location ①, saving time and convenience.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image6.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/5.png" class="common_img" style="width:500px" >
 
-7. In the voice recognition settings, selecting **xAI Speech-to-Text** is recommended. Detailed working parameters can be adjusted in the advanced settings, or the default settings can be kept.
+6. If the following prompt appears on the interface, it indicates that the hotspot cannot be found in the current environment or the password is incorrect. Please re-enter.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image7.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/6.png" class="common_img" style="width:800px" >
 
-8. In the voice synthesis settings, select **xAI** and choose a preferred voice tone. Clicking the **Preview** button on the right is supported to preview and select a voice tone. Detailed parameters can be adjusted in the advanced settings, or the default settings can be kept.
+7. If the following prompt appears on the interface, it indicates that the module successfully found the corresponding hotspot and connected. The module restarts automatically and connects to the corresponding hotspot.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image8.png" width="800"></div>
-
-9. Select **No Memory** for the memory settings.
-
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image9.png" width="800"></div>
-
-10. MCP tools are enabled by default. Keep the default settings here.
-
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image10.png" width="800"></div>
-
-11. Select the **General Assistant** template under the agent prompts, and then click **Create Agent**.
-
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image11.png" width="800"></div>
-
-12. After creating the agent, return to the agent homepage and click **Manage Devices** under the newly created agent.
-
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image12.png" width="1500"></div>
-
-13. Enter the **6-digit device ID** displayed on the module screen into the binding code input field, and then click **Add Device**.
-
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image13.png" width="1500"></div>
-
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/image14.png" width="1500"></div>
-
-<p id ="anther4.4.1.3"></p>
-
-#### 3. Device Unbinding
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/7.png" class="common_img" style="width:500px" >
 
 > [!NOTE]
 >
-> **There are two methods for unbinding the device: platform unbinding and conversational unbinding.**
+> * **Do not enter hotspots that cannot be searched in the current environment, have weak signals, or do not support network connection.**
+>
+> * **If the module has previously saved connection information for other hotspots, newly saved hotspot connection information will coexist. Upon next power-on, the module reads each connection item in order of saving to attempt matching and connection.**
+>
+> * **If the screen displays "Error: Failed to check for new version, will retry in xx seconds" after network configuration, it may be because the current hotspot cannot access the Internet or has poor network quality. Please try switching.**
+>
 
-- **<font size="4px">Platform Unbinding</font>**
+- **Manually Enter Network Configuration Mode**
 
-1. Once logged in, click **Agents**, then click **Device Overview**. Select the device to delete and click **Delete**.
+1. The WonderLLM module supports manually entering network configuration mode to meet requirements for selecting module connection hotspots.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/image1.png" width="1500"></div>
+2. After module power-on, long press the right button to send a restart command to the module. The screen turns off upon receiving the command. Continue holding the long press. After restarting, the module attempts to connect to hotspots and a white circular progress bar appears on the screen. Detecting that the right button is long-pressed, the module stops matching external hotspots and enters network configuration mode directly, at which point the button can be released.
 
-2. Click **Confirm** to delete and unbind the device.
+3. Existing hotspot configuration information is not lost after entering network configuration mode. Access the network configuration page or short press the right button to exit network configuration mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/image2.png" width="1500"></div>
+4. After exiting network configuration mode, the module continues attempting connection based on saved hotspot information. If connection to external hotspots fails, network configuration mode is re-entered.
 
-- **<font size="4px">Conversational Unbinding</font>**
+- **Manage Saved Connection Configurations**
 
-Speak the command **Confirm delete device** to unbind the device.
+1. When the module is in network configuration mode, after connecting to the module hotspot and entering the network configuration interface, a list of all saved hotspot connection configurations is displayed if connection information was configured previously, as shown below:
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/image3.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/8.png"  class="common_img" style="width:500px" >
 
-<p id ="anther4.4.1.4"></p>
+2. Click the <img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/9.png" style="width:70px" class="inline-icon" /> icon corresponding to any saved hotspot connection information to delete it. Click the <img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_2/10.png" style="width:70px" class="inline-icon" /> icon to raise its matching priority order during module network configuration, where priority decreases from top to bottom in the list.
 
-#### 4. Device Restart
+<a id ="section-4-4-2-3"></a>
 
-1. The module supports manual restart after powering on. The module can be restarted without disconnecting power in two ways: by long-pressing the **left button**, or by long-pressing the **right button**.
+#### (3) Device Binding
 
-2. Upon detecting the restart command from the long-press, the screen will turn off and the module will restart automatically. The button can be released once the screen turns off.
+- **Operation Description**
 
-3. If restarting by long-pressing the **right button**, failing to release it in time may cause the module to enter network configuration mode. To avoid this, restarting the module by long-pressing the **left button** is recommended.
+After module power-on and network configuration, if used for the first time, the screen displays the **6-Digit Device ID** and **Device Binding Platform URL** accompanied by voice announcements. Complete module device binding with the platform agent according to the tutorial below.
 
-<p id ="anther4.4.3"></p>
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_1/3.png" class="common_img" style="width:300px" >
+
+- **Operation Steps**
+
+1. Click the hyperlink [XiaoZhi AI Chatbot](https://xiaozhi.me/) to access the device binding URL directly, or copy the URL below and open any browser to enter the device binding URL.
+
+```py
+https://xiaozhi.me
+```
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/1.png" class="common_img" style="width:800px" >
+
+2. Click **Console** to enter the XiaoZhi AI agent management platform.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/2.png" class="common_img" style="width:800px" >
+
+3. Upon initial login, register a platform account first.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/3.png" class="common_img" style="width:800px" >
+
+4. After filling in corresponding information, click **Send code** to obtain the verification code required for account registration.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/4.png" class="common_img" style="width:800px" >
+
+5. Check the agreement and privacy policy, then click **Login**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/5.png" class="common_img" style="width:800px" >
+
+6. Select and complete corresponding information, then click **Confirm** to complete registration and login.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/6.png" class="common_img" style="width:800px" >
+
+7. After completing registration and login, enter the following interface.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/7.png" class="common_img" style="width:800px" >
+
+8. Click the **∨** shaped button at the add device button location, then click **Create Agent**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/8.png" class="common_img" style="width:800px" >
+
+9. Enter the agent name, then click **Confirm** to complete agent addition.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/9.png" class="common_img" style="width:500px" >
+
+10. Click **Configure** to perform feature configurations for the agent.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/10.png" class="common_img" style="width:800px" >
+
+11. Click **Role** to perform role configuration for the agent. Select the desired dialogue language at location ①, select the desired role voice at location ②, and perform voice settings at location ③.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/11.png" class="common_img" style="width:800px" >
+
+12. Click **Model & Memory**, select **Xiaozhi Lite** for the language model, turn off the memory feature, and keep default selections for others.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/12.png" class="common_img" style="width:800px" >
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/13.png" class="common_img" style="width:800px" >
+
+> [!NOTE]
+>
+> **If the account has not completed developer certification on the XiaoZhi AI platform, only lower performance models such as Xiaozhi Lite can be selected by default. To use higher performance models such as Qwen 3.6 or DeepSeek V4, complete certification on the XiaoZhi AI platform according to [Platform Developer Certification](#section-4-4-2-5) before reselecting here.**
+
+13. Click **Extensions** to enable or disable official service functions, which are enabled by default for new agents, then click **Save**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/14.png" class="common_img" style="width:800px" >
+
+14. Click **Devices** to enter the device management function.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/15.png" class="common_img" style="width:800px" >
+
+15. Click **Link new device**, fill in the **6-digit device ID** in the pop-up window, then click **Link**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/16.png" class="common_img" style="width:800px" >
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/17.png" class="common_img" style="width:800px" >
+
+16. Upon successful binding, the prompt **Device Added Successfully** can be observed on the page. Next select **Open Source Version**, then click **Start Using**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/18.png" class="common_img" style="width:800px" >
+
+<a id ="section-4-4-2-4"></a>
+
+#### (4) Device Unbinding
+
+- **Operation Description**
+
+To unbind a device, refer to the following operations for device unbinding.
+
+- **Operation Steps**
+
+1. Click the hyperlink [XiaoZhi AI Chatbot](https://xiaozhi.me/) to access the device binding URL directly, or copy the URL below and open any browser to enter the device binding URL.
+
+```py
+https://xiaozhi.me
+```
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/1.png" class="common_img" style="width:800px" >
+
+2. Click **Console** to enter the XiaoZhi AI agent management platform.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/2.png" class="common_img" style="width:800px" >
+
+3. Click **Devices** to enter the device management function.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_3/15.png" class="common_img" style="width:800px" >
+
+4. Locate the device to unbind, click the corresponding <img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_4/image.png" style="width:70px" class="inline-icon" /> icon, then click **Unbind** in the pop-up window.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_4/1.png" class="common_img" style="width:800px" >
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_4/2.png" class="common_img" style="width:800px" >
+
+5. Upon successful unbinding, the prompt **Device unbound successfully** can be observed on the page.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_4/3.png" class="common_img" style="width:800px" >
+
+<a id ="section-4-4-2-5"></a>
+
+#### (5) Platform Developer Certification
+
+> [!NOTE]
+>
+> **If the account has not completed GitHub certification, normal module usage is not affected, but available features are limited. Differences between uncertified and certified accounts are shown in the table below:**
+
+|                           |        Unauthenticated         |                    Authenticated                     |
+| :-----------------------: | :----------------------------: | :--------------------------------------------------: |
+|      Model selection      |          Xiaozhi Lite          | Xiaozhi Lite, Qwen 3.6, DeepSeek V4, Doubao Seed 2.0 |
+|  Number of bound devices  |               10               |                         100                          |
+| Official service features | Weather, Music, Knowledge Base |      Weather, Joke, Music, News, Knowledge Base      |
+
+- **Log In to GitHub Platform**
+
+1. On the XiaoZhi platform, click **GitHub Verification** under the <img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/image.png" style="width:70px" class="inline-icon" /> icon. After the page jumps to the authentication interface, click **Link GitHub**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/1.png" class="common_img" style="width:800px" >
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/2.png" class="common_img" style="width:800px" >
+
+2. Wait for the interface to jump to the GitHub account login page.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/3.png" class="common_img" style="width:500px" >
+
+3. If a GitHub account is registered, log in directly using the username and password to jump to [Bind XiaoZhi Platform with GitHub Platform](#section-4-4-2-5-3). If no GitHub account is registered, click **Create an account**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/4.png" class="common_img" style="width:500px" >
+
+4. In the pop-up interface, enter personal email, login password, username, and location information in sequence, then click **Create account** to submit registration information.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/5.png" class="common_img" style="width:500px" >
+
+5. Click **Visual puzzle** on the page to start image verification.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/6.png" class="common_img" style="width:500px" >
+
+6. After completing image verification, the GitHub platform sends a verification email to the registered email address. Open the mailbox, copy the verification code, and enter it on the webpage.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/7.png" class="common_img" style="width:500px" >
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/8.png" class="common_img" style="width:500px" >
+
+7. After completing registration, the webpage jumps to the login page, where a registration success prompt pop-up window can be observed.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/9.png" class="common_img" style="width:500px" >
+
+<a id ="section-4-4-2-5-3"></a>
+
+- **Bind XiaoZhi Platform with GitHub Platform**
+
+1. Click **Authorize tenclass** to complete binding between the XiaoZhi platform and GitHub platform.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/11.png" class="common_img" style="width:500px" >
+
+2. After completing binding, XiaoZhi platform certification is complete, automatically returning to the previous certification page where prompt information appears.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/12.png" class="common_img" style="width:800px" >
+
+3. Click **Agents** to return to the XiaoZhi AI agent console and create a new agent. All previously restricted configurations can be found fully unlocked.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/13.png" class="common_img" style="width:800px" >
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/14.png" class="common_img" style="width:800px" >
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_2/sub_5/15.png" class="common_img" style="width:800px" >
+
+<a id ="section-4-4-2-6"></a>
+
+#### (6) Device Restart
+
+1. The module supports manual restart after power-on. Restart the module without disconnecting power using either of the following methods: **① Long press the left button, Button A**, or **② Long press the right button, Button B**.
+
+2. When the module detects a restart command sent via a long button press, it turns off and restarts automatically. The screen turns off directly, at which point the button can be released and the module boots up automatically.
+
+3. If restarting via **Long press the right button, Button B**, failing to release the button after the module powers on again may cause the module to falsely enter network configuration mode. Therefore, using a long press on the left button to achieve module restart is recommended.
+
+<a id ="section-4-4-3"></a>
 
 ### 4.4.3 Volume Control
 
 > [!NOTE]
 >
-> **Changing the volume while WonderLLM is speaking will take effect during the next voice output.**
+> **Changing the volume while WonderLLM is speaking will take effect in the next round of speaking.**
 
-#### 1. Screen Touch Control
+#### (1) Screen Touch Control
 
-1. After the module is powered on and connected to a hotspot, slide on the screen in either of these two interfaces to adjust the volume: ① Expression Mode interface, or ② Chat Mode interface.
+1. After module power-on and successful connection to external hotspots, touch the screen to adjust module volume in two interfaces: ① Expression Interface and ② Chat Interface.
 
-2. Slide anywhere on the screen to adjust the volume. Swipe up to increase the volume, and swipe down to decrease it. The volume change depends on the swiping distance. Swiping multiple times is supported to reach the desired volume.
+2. The operation method is as follows: slide anywhere on the screen. Sliding vertically upward automatically increases volume, while sliding vertically downward automatically decreases volume. The volume change magnitude depends on screen sliding distance, and adjusting volume via multiple screen slides is supported.
 
-3. While swiping to adjust the volume, the current volume level is displayed at the top of the screen. The diagram below shows swiping up on the **Expression Mode interface** to increase the volume:
+3. When sliding the screen to change volume, real-time volume values are displayed at the top center of the screen. The figure below takes sliding upward on the **Expression Interface** to increase volume as an example:
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_3/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_3/1.png" class="common_img" style="width:300px" >
 
-#### 2. Voice Interaction Control
+#### (2) Voice Interaction Control
 
-1. During interaction, the volume can also be adjusted using voice commands.
+1. During interaction with the WonderLLM large model module, issue volume adjustment commands to control module volume adjustment.
 
-2. Activate the module and enter the **Chat Mode interface** by speaking the wake word or short-pressing the **right button**. Voice commands can be used to: 1. Set the volume to a specific value from 0 to 100, or express it as a percentage. 2. Increase or decrease the volume using vague expressions where the module adjusts the volume automatically.
+2. The operation method is as follows: say the wake word or short press the right button to enter the **Chat Interface**. At this time the module is activated. Refer to expressions such as: **① Set volume to xx, with valid range 0 to 100 supporting integers or percentages**, **② Increase volume, a fuzzy expression where the module adjusts volume automatically**.
 
-3. Once recognized, the system executes the volume adjustment automatically. The chat interface then displays and broadcasts a response generated by the large language model.
+3. After recognition, the dialogue box returns the volume adjustment function to be called, which does not require attention. Afterwards, the dialogue box displays the large model response statement accompanied by synchronized broadcast, where response statements are randomly generated by the large model module to ensure appropriate meaning.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_3/image2.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_3/2.png" class="common_img" style="width:300px" >
 
-<p id ="anther4.4.4"></p>
+<a id ="section-4-4-4"></a>
 
 ### 4.4.4 Chat Mode
 
-#### 1. Mode Overview
+#### (1) Mode Overview
 
-1. In this mode, the module listens to voice input and generates appropriate replies.
+1. In the current mode, the module listens to and understands spoken content, providing appropriate responses.
 
-2. The transitions between modes are shown in the diagram below. To enter Chat Mode from any other mode, speak the wake word or short-press the **right button**.
+2. Switching relationships among module modes are shown in the figure below. Operations to **enter chat mode** are summarized as follows: in any other mode, say the wake word or short press the right button to enter chat mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_4/image.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_4/image.png"  class="common_img" style="width:500px" >
 
-#### 2. Operating Instructions
+#### (2) Operation Instructions
 
-1. After network configuration, the module first enters the Expression Mode interface, as shown below:
+1. After network configuration is completed, the module first enters the expression interface, as shown below:
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_1/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_1/1.png" class="common_img" style="width:300px" >
 
-2. Wake up the module and enter Chat Mode by speaking the wake word **Hello Hiwonder** or short-pressing the right button, Button B. The buzzer will beep, the screen will switch to the **chat interface**, and the module will start listening.
+2. Say the specified wake word **Hello Hiwonder**, or **short-press the right button B** to enter chat mode. A chime prompt tone can be heard from the buzzer, the screen switches to display the **Chat Box Interface**, and the module is successfully woken up to begin listening to spoken content.
 
-3. If entering Chat Mode by **speaking the wake word**, the module automatically sends "Hello" to start the conversation once the wake word is recognized. The large language model will generate a greeting, display it in the chat interface, and broadcast it. The greeting can be interrupted to skip it quickly, as detailed in [4.4.8 Free Chat](#anther4.4.8). The module only starts listening for speech after the greeting finishes or is interrupted.
+3. If entering chat mode by **saying the wake word**, upon recognizing the wake word the module **sends 'Hello' by default as the opening remark**. The large model provides an appropriate response displayed on the chat box interface accompanied by synchronized broadcast, which can be interrupted to skip quickly as detailed in [Free Chat](#section-4-4-8), before listening to spoken content begins.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_4/image2.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_4/2.png"  class="common_img" style="width:300px" >
 
-4. If entering Chat Mode by **short-pressing the right button**, the module **immediately starts listening** for speech.
+4. If entering chat mode by **short pressing the right button**, the module **starts listening immediately** to spoken content.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_4/image3.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_4/3.png"  class="common_img" style="width:300px" >
 
-5. During the interaction, the chat interface can be hidden, keeping the expression interface displayed continuously. For details, refer to the instructions in [4.4.5 Expression Mode](#anther4.4.5).
+5. After entering chat mode and starting human-machine interaction, choose to **not display the chat box interface** and **maintain the expression interface continuously**, with specific operations detailed in [Expression Mode](#section-4-4-5).
 
-<p id ="anther4.4.5"></p>
+<a id ="section-4-4-5"></a>
 
 ### 4.4.5 Expression Mode
 
 > [!NOTE]
 >
-> * **If no voice interaction occurs within 20 seconds on the expression interface, the module enters Clock Mode. Tapping anywhere on the screen returns it to Expression Mode.**
+> * **If no wake word is spoken for more than 20 seconds on the expression interface, the module enters weather clock mode. Tap anywhere on the screen to return to expression mode.**
 >
-> * **Switching modes changes the screen display style during Chat Mode.**
+> * **Switching between the two modes here switches the display content screen of the module when entering chat mode.**
 >
-> * **Short-pressing the left button to switch display modes does not wake up the module or start a conversation. To chat, the module must be woken up.**
+> * **During mode switching by short pressing the left button, the module continuously operates in Expression Mode. Short pressing the left button to switch to Chat Mode does not wake up the module to enter actual chat mode.**
 >
-> * **If the display style is set to Chat Mode to show text, waking up the module displays the text chat interface and the typed responses from the large language model.**
+> * **Specifically, if short pressing the left button switches the display interface in chat mode to Chat Mode, when activating the module by saying the wake word or short pressing the right button to start interaction, the module displays the chat box interface and large model response content.**
 >
-> * **If the display style is set to Expression Mode, the module remains on the expression interface during the conversation and shows facial expressions corresponding to the voice response.**
+> * **If short pressing the left button switches the display interface in chat mode to Expression Mode, when activating the module by saying the wake word or short pressing the right button to start interaction, the module remains on the expression interface continuously and performs appropriate expression mimicry based on response content.**
+>
 
-#### 1. Mode Overview
+#### (1) Mode Overview
 
-1. In this mode, the module displays various facial expressions.
+1. In the current mode, the module mimics human facial expressions and demeanor.
 
-2. The transitions between modes are shown in the diagram below. To enter Expression Mode: 1. In **Clock Mode**, tap the screen. 2. In **Camera Mode**, double-tap the screen. 3. In **Chat Mode** , when the module is not speaking,, short-press the **right button**.
+2. Switching relationships among module modes are shown in the figure below. Operations to **enter expression mode** are summarized as follows: **① single-tap the screen in weather clock mode to enter expression mode**, **② double-tap the screen in camera mode to enter expression mode**, and **③ short press the right button in chat mode when the module is not speaking to enter expression mode**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_4/image.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_4/image.png"  class="common_img" style="width:500px" >
 
-#### 2. Operating Instructions
+#### (2) Operation Instructions
 
-1. In Expression Mode, short-press the **left button** to switch the Chat Mode display style between **Chat Mode** showing text and **Expression Mode** showing facial expressions. The current selection is displayed at the top of the screen.
+1. In expression mode, short press the left button to switch between **Chat Mode** and **Expression Mode**. The current mode name is visible at the top of the screen.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_5/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_5/1.png" class="common_img" style="width:300px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_5/image2.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_5/2.png" class="common_img" style="width:300px" >
 
-2. When the display style is set to Expression Mode, the module will show expressions matching the conversation. There are two ways to trigger expressions: 1. Describe a situation, and the AI will automatically react with a matching expression. 2. Directly command the module to show a specific expression, such as "Make a happy face".
+2. After switching to **Expression Mode** by short pressing the left button, where screen display content entering chat mode is the expression interface, and activating the module to enter **Chat Mode** by saying the wake word or short pressing the right button to start interaction, the module performs expression mimicry based on spoken content. Calling methods mainly include two categories: **① describe specific events where the module automatically makes appropriate expression mimicry when replying**, and **② ask to perform a specific expression**.
 
-<p id ="anther4.4.6"></p>
+<a id ="section-4-4-6"></a>
 
-### 4.4.6 Clock Mode
+### 4.4.6 Weather Clock Mode
 
 > [!NOTE]
 >
-> **In Clock Mode, tapping anywhere on the screen returns the module to Expression Mode. Waking up the module by speaking the wake word or short-pressing the right button is also supported.**
+> **In weather clock mode, single tap anywhere on the screen to return to expression mode, or enter chat mode by saying the wake word or short pressing the right button.**
 
-#### 1. Mode Overview
+#### (1) Mode Overview
 
-1. In this mode, the module displays real-time weather and time information based on the configured city.
+1. In the current mode, the module obtains real-time weather and time information according to the set city and displays it.
 
-2. The transitions between modes are shown in the diagram below. To enter Clock Mode, remain idle for 20 seconds or tap the screen while in Expression Mode. Direct transitions from **Camera Mode** or **Chat Mode** to Clock Mode are **not supported**.
+2. Switching relationships among module modes are shown in the figure below. Operations to **enter weather clock mode** are summarized as follows: **① single-tap the screen or perform no operation for 20 seconds in expression mode to enter weather clock mode**. Camera mode and chat mode do not support direct switching to weather clock mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_4/image.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_4/image.png"  class="common_img" style="width:500px" >
 
-#### 2. Operating Instructions
+#### (2) Operation Instructions
 
-1. Remaining idle for 20 seconds or tapping the screen in Expression Mode switches the module to Clock Mode.
+1. Perform no operation for 20 seconds or single tap anywhere on the screen in expression mode to switch to weather clock mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_4/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_4/1.png"  class="common_img" style="width:300px" >
 
-2. Once in Clock Mode, the module remains in this mode until another action is taken.
+2. After entering weather clock mode, the module remains in this mode continuously if no other operations are performed.
 
-3. In this mode, the screen displays: ① Real-time weather and a 2-day forecast, ② Current date and time, and ③ The configured city.
+3. In this mode, the module screen displays the following content: **① real-time weather information and 2-day weather forecast for the location**, **② current Beijing time and date**, and **③ location city, with factory default set to Shenzhen, Guangdong**.
 
-4. Modifying the weather location is supported. Wake up the module and say: 1. "Change the city", and the AI will ask to specify a city in the subsequent conversation. 2. "Switch the city to [City Name]". The location for Clock Mode will update once the module responds.
+4. The module supports modifying the location city. Enter the chat interface to activate the module by saying the wake word or short pressing the right button, and issue commands to the WonderLLM module referring to expressions such as: **① modify city, where subsequent dialogue requires specifying the target city**, and **② switch location city to xx city**. After module reply, the location in weather clock mode switches synchronously.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_6/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_6/1.png"  class="common_img" style="width:300px" >
 
-<p id ="anther4.4.7"></p>
+<a id ="section-4-4-7"></a>
 
 ### 4.4.7 Camera Mode
 
-#### 1. Mode Overview
+#### (1) Mode Overview
 
-1. In this mode, the module uses the camera to capture and display real-time images continuously.
+1. In the current mode, the module calls the camera to continuously capture and display real-time images.
 
-2. The transitions between modes are shown in the diagram below. To enter Camera Mode, double-tap the screen while in Expression Mode. Direct switching to Camera Mode from **Clock Mode** or **Chat Mode** is **not supported**.
+2. Switching relationships among module modes are shown in the figure below. Operations to **enter camera mode** are summarized as follows: **① double-tap the screen in expression mode to enter camera mode**. Weather clock mode and chat mode do not support direct switching to camera mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_4/image.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_4/image.png"  class="common_img" style="width:500px" >
 
-#### 2. Operating Instructions
+#### (2) Operation Instructions
 
-1. Double-tapping the screen in **Expression Mode** switches the module to Camera Mode.
+1. **Double-tap** anywhere on the screen in expression mode to switch to camera mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_7/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_7/1.png"  class="common_img" style="width:300px" >
 
-2. In Camera Mode, the module continuously captures and displays real-time images. The module remains in this mode until another action is taken.
+2. In camera mode, the module calls the camera to **continuously capture** and display real-time images. The module remains in this mode continuously if no other operations are performed.
 
-3. In Camera Mode, tap anywhere on the screen to trigger the scene understanding function, as detailed in [4.4.9 Scene Understanding](#anther4.4.9).
+3. In camera mode, single tap anywhere on the screen to trigger the scene understanding function, as detailed in [Scene Understanding](#section-4-4-9).
 
-<p id ="anther4.4.8"></p>
+<a id ="section-4-4-8"></a>
 
 ### 4.4.8 Free Chat
 
-#### 1. General Operating Instructions
+#### (1) General Operation Instructions
 
-1. After the module is powered on and the network configuration is complete, wake it up to enter Chat Mode by **speaking the wake word or short-pressing the right button**.
+1. After module power-on and network configuration, wake up the module to enter chat mode by **saying the wake word or short pressing the right button**.
 
-2. The module supports natural language input. It understands and responds with text and voice by communicating with the cloud large language model. The module also features memory and supports multi-round continuous conversations.
+2. Speak freely while the module understands content via cloud large model interaction and provides text and voice replies. The module features memory capabilities supporting multi-round continuous dialogue.
 
-3. After each round of interaction, including after waking up the module, the module continues to listen. If no speech is recognized within 1 minute, the module automatically stops listening, and the AI displays and broadcasts a farewell response. To continue the interaction, wake up the module again by **speaking the wake word or short-pressing the right button**.
+3. After each round of interaction dialogue finishes, including after waking up WonderLLM, the module continues listening. If no spoken content is recognized within 1 continuous minute, listening stops automatically, and the large model replies with appropriate farewell remarks displayed on the chat box interface accompanied by synchronized broadcast. To continue interaction, wake up the module again by **saying the specified wake word or short pressing the right button**.
 
-4. Actively ending the conversation is supported by saying: 1. **Goodbye**, or 2. **Okay, that's all for now**. The module will stop listening after responding with a farewell.
+4. During human-machine interaction dialogue, actively end the dialogue by issuing commands to the WonderLLM module referring to expressions such as: **① Goodbye**, and **② Okay, stop here**. Upon receiving the command, the module replies with appropriate farewell remarks and ends listening.
 
-5. The WonderLLM module supports voice interruption. When the module is speaking, whether replying, greeting, or saying goodbye, short-press the **right button** to immediately end the current response and start listening for the next input.
+5. The WonderLLM module supports voice interruption. When the module is speaking, including **① voice response to spoken content**, **② voice greeting**, and **③ voice farewell**, short press the right button to end current speech playback immediately and start listening to the next round of spoken content.
 
-6. The WonderLLM module supports bilingual recognition and speech. The module's working language can be switched by saying: **Can you speak English?**, or asking the module to communicate in English in custom words.
+6. The WonderLLM module supports English recognition and speaking in English. Switch module operating language directly referring to expressions such as: **① Speak English**, **② Switch to English communication**.
 
-#### 2. Special Function Invocation
+#### (2) Special Feature Invocation
 
-The module features built-in functions that can be triggered by voice commands during conversations. To query all supported functions, the following can be asked: 1. "What can you do?", or 2. "Introduce your functions." The table below lists the currently supported functions:
+- **Feature Overview**
 
-| No. | Function | No. | Function |
-| :---: | :--- | :---: | :--- |
-| 1 | Weather inquiry | 4 | Joke telling |
-| 2 | News broadcast | 5 | Music playback |
-| 3 | Dressing advice |  |  |
+The module integrates special built-in features invoked by spoken commands during dialogue interaction. Issue commands to the WonderLLM module referring to expressions such as **① What can be done?** or **② Introduce features** to query all currently supported special features listed in the table below:
 
-For details on how to call the corresponding special functions, refer to [2.1.4 Smart Chat](https://wiki.hiwonder.com/projects/DaDablock-AI/en/standard-kit/docs/2_Quick_Start.html#smart-chat).
+| Number | Feature | Number | Feature |
+| :---: | :---: | :---: | :---: |
+| 1 | Check weather | 4 | Tell jokes |
+| 2 | Broadcast news | 5 | Check almanac |
+| 3 | Outfit advice | 6 | Play music |
 
-<p id ="anther4.4.9"></p>
+- **Invocation Examples**
+
+Refer to the following expressions to issue commands to the WonderLLM module to invoke corresponding features:
+
+1. Check weather feature: **Check the weather in xx area**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_8/1.png" class="common_img" style="width:300px" >
+
+2. Broadcast news feature: **① Broadcast today's news**, **② Introduce today's hot topics**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_8/2.png" class="common_img" style="width:300px" >
+
+3. Outfit advice feature: **What clothes are suitable for going out today?**
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_8/3.png" class="common_img" style="width:300px" >
+
+4. Tell jokes feature: **① Tell a joke**, **② Tell a funny joke**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_8/4.png" class="common_img" style="width:300px" >
+
+5. Check almanac feature: **Query today's almanac items**.
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_8/5.png" class="common_img" style="width:300px" >
+
+6. Play music feature: **Play a random music track**. 
+
+   > [!NOTE]
+   >
+   > **When using the play music feature, lowering the module volume is recommended.**
+
+<img src="../_static/media/chapter_4/section_4/media/subsection_8/6.png" class="common_img" style="width:300px" >
+
+<a id ="section-4-4-9"></a>
 
 ### 4.4.9 Scene Understanding
 
 > [!NOTE]
 >
-> * **The scene understanding function does not support continuous observation. The module only captures and analyzes a single image when the function is triggered.**
+> * **In scene understanding, continuous observation is not supported. The module captures a real-time image and analyzes it only after the feature is enabled by command.**
 >
-> * **In Camera Mode, double-tap the screen to return to the Expression Mode interface.**
+> * **In camera mode, double-tap again to return to the expression interface.**
 >
-> * **Before the function is triggered in Camera Mode, the module only displays the real-time camera feed without sending any image to the large language model for analysis.**
+> * **Before single-tap triggering in camera mode, the module only captures real-time images through the camera and displays them on the screen without calling the large model for analysis.**
+>
 
-#### 1. Voice Interaction Control
+#### (1) Voice Interaction Control
 
-1. After powering on the module, enter the Expression Mode interface. Speak the wake word or short-press the **right button** to activate the module and open the chat interface.
+1. After power-on, enter the expression interface, then enter the chat interface to activate the module by saying the **wake word or short pressing the right button**.
 
-Command references are listed below: 1. **Describe what is in front of you**, or 2. **Take a photo**.
+2. Issue commands to the WonderLLM module referring to expressions such as: **① Describe what is seen ahead**, **② Take a photo**.
 
-2. Upon receiving the command, the camera captures a real-time image and displays it briefly on the screen for confirmation. The system automatically handles the image capture, and then the chat interface displays and broadcasts the AI's analysis of the image.
+3. Upon understanding the command, the module camera starts to capture a real-time image displayed briefly on the screen for confirmation. The dialogue box returns the image capture function to be called, which does not require attention. Afterwards, the dialogue box displays image analysis statements from the large model accompanied by synchronized broadcast, where response statements are randomly generated by the large model module to ensure appropriate meaning.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_7/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_7/1.png" class="common_img" style="width:300px" >
 
-#### 2. Screen Touch Trigger
+#### (2) Screen Touch Trigger
 
-1. Double-tapping the screen in **Expression Mode** switches the module to Camera Mode, displaying the real-time camera feed.
+1. **Double-tap** anywhere on the screen in expression mode to enter camera mode, where the screen displays real-time camera views ahead.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_7/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_7/1.png"  class="common_img" style="width:300px" >
 
-2. In Camera Mode, tapping the screen captures an image, displays it briefly, and then returns to the camera feed. The module will automatically broadcast the AI's analysis of the captured image.
+2. In camera mode, **tap** anywhere on the screen to capture a real-time image displayed briefly on the screen for confirmation before restoring to camera mode. The module automatically broadcasts image analysis statements, where response statements are randomly generated by the large model module to ensure appropriate meaning.
 
-<p id ="anther4.4.10"></p>
+<a id ="section-4-4-10"></a>
 
 ### 4.4.10 Firmware Update
 
-#### 1. ESP32-S3 Firmware Flashing
+#### (1) ESP32-S3 Firmware Flashing
 
-1. Connect the top Type-C port of the WonderLLM module to the computer using a USB cable.
+1. Connect the top Type-C interface of the WonderLLM module to the computer using a USB cable.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image.png" width="400"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image.png"  class="common_img" style="width:400px" >
 
-2. Open the file **flash_download_tool_3.9.7.exe** in the folder **[Appendix/2. WonderLLM Related Files/WonderLLM Flashing Tool/ESP32-S3 Firmware Flashing Tool/flash_download_tool_3.9.7](https://drive.google.com/drive/folders/1VT4wKRY0sFAQrTcgnuTOps3clNoc88w1?usp=sharing)**.
+2. Open the **flash_download_tool_3.9.7.exe** file in the folder **[3. Appendix\2. WonderLLM Related Files\WonderLLM Flashing Tool\ESP32-S3 Firmware Flashing Tool\flash_download_tool_3.9.7](https://drive.google.com/drive/folders/1VT4wKRY0sFAQrTcgnuTOps3clNoc88w1?usp=sharing)**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image1.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image1.png"  class="common_img" style="width:500px" >
 
-3. Select **ESP32-S3** as the **Chip Type**, leave other settings as default, and click **OK**.
+3. Select **ESP32-S3** for **ChipType**, keep default settings for others, then click **OK**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image2.png" width="400"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image2.png"  class="common_img" style="width:400px" >
 
-4. Once the tool opens, click **...** to select the firmware bin file to flash. Choose **WonderLLM_S3_V1.9.0_EN.bin** from the folder **[Appendix/2. WonderLLM Related Files/WonderLLM Firmware File/Online](https://drive.google.com/drive/folders/1GhlY747Im35TiNxDImEB4xVlcXIDP1lX?usp=sharing)**.
+4. After opening the tool, click **...** to select the program bin file to flash: open the **WonderLLM_S3_V1.9.0-EN.bin** file in the folder **[Appendix\WonderLLM Firmware Files\Online](https://drive.google.com/drive/folders/1GhlY747Im35TiNxDImEB4xVlcXIDP1lX?usp=sharing)**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image3.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image3.png"  class="common_img" style="width:500px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image4.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image4.png"  class="common_img" style="width:800px" >
 
-5. Check the box on the left, configure the other settings as shown in the diagram below, and select the COM port occupied by the module. 
+5. Check the box on the left side and configure remaining settings according to the figure below. Select the COM port occupied by the module. 
 
-> [!NOTE]
->
-> **If the module does not work properly after flashing the firmware with SPI MODE set to DIO, try setting SPI MODE to DOUT and flashing it again.**
+   > [!NOTE]
+   >
+   > **If configuring SPI MODE as DIO according to the figure results in abnormal module operation after firmware flashing, try configuring SPI MODE as DOUT and flash again.**
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image5.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image5.png"  class="common_img" style="width:500px" >
 
-6. Click **ERASE** first to erase the existing firmware, which is a mandatory step, and wait for the status bar to display **FINISH**.
+6. Click **ERASE** first to erase previously downloaded firmware, a mandatory step, and wait for the status bar to display **FINISH**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image6.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image6.png"  class="common_img" style="width:500px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image7.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image7.png"  class="common_img" style="width:500px" >
 
-7. Click **START** to flash the selected firmware, and wait for the progress bar to complete.
+7. Click **START** to download the selected firmware and wait for the progress bar to load, completing firmware downloading.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image8.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image8.png"  class="common_img" style="width:500px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image9.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_1/image9.png"  class="common_img" style="width:500px" >
 
-#### 2. CI1302 Firmware Flashing
+#### (2) CI1302 Firmware Flashing
 
-1. Connect the bottom Type-C port of the WonderLLM module to the computer using a USB cable.
+1. Connect the bottom Type-C interface of the WonderLLM module to the computer using a USB cable.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image.png" width="400"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image.png"  class="common_img" style="width:400px" >
 
-2. Open the file **PACK_UPDATE_TOOL.exe** in the folder **[Appendix/2. WonderLLM Related Files/WonderLLM Flashing Tool/CI1302 Firmware Flashing Tool](https://drive.google.com/drive/folders/1J_IZBq0eLWigoezojcnE9XaKbCIOjJLI?usp=sharing)**.
+2. Open the **PACK_UPDATE_TOOL.exe** file in the folder **[3. Appendix\2. WonderLLM Related Files\WonderLLM Flashing Tool\CI1302 Firmware Flashing Tool](https://drive.google.com/drive/folders/1J_IZBq0eLWigoezojcnE9XaKbCIOjJLI?usp=sharing)**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image1.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image1.png"  class="common_img" style="width:500px" >
 
-3. Select the **CI1302** chip and click **Upgrade**.
+3. Select the **CI1302** chip, then click **Update**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image2.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image2.png"  class="common_img" style="width:500px" >
 
-4. Click **Select firmware** and choose **CI1302-EN.bin** from the folder **[Appendix/2. WonderLLM Related Files/WonderLLM Firmware File/Online](https://drive.google.com/drive/folders/1GhlY747Im35TiNxDImEB4xVlcXIDP1lX?usp=sharing)**.
+4. Click **Select firmware** to select the program bin file to flash: open the **CI1302-EN.bin** file in the folder **[Appendix\WonderLLM Firmware Files\Online](https://drive.google.com/drive/folders/1GhlY747Im35TiNxDImEB4xVlcXIDP1lX?usp=sharing)**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image3.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image3.png"  class="common_img" style="width:500px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image4.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image4.png"  class="common_img" style="width:800px" >
 
-5. Find the corresponding COM port and click to select it.
+5. Locate the corresponding serial port and click to select.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image5.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image5.png"  class="common_img" style="width:500px" >
 
-6. Press and hold both the left and right buttons on the WonderLLM module simultaneously to start flashing, and wait for it to complete successfully.
+6. Next, **press and hold both left and right buttons A and B simultaneously** on the WonderLLM module to enter flashing mode, waiting for successful flashing.
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image6.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image6.png"  class="common_img" style="width:300px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image7.png" width="700"></div>
+<img src="../_static/media/chapter_4/section_4/media/subsection_10/sub_2/image7.png"  class="common_img" style="width:700px" >
 
-<p id ="anther4.5"></p>
+<p id ="section-4-5"></p>
 
 ## 4.5 WonderLLM Offline Version
 
-<p id ="anther4.5.1"></p>
+<p id ="section-4-5-1"></p>
 
 ### 4.5.1 Firmware Update
 
-#### 1. ESP32-S3 Firmware Flashing
+#### (1) ESP32-S3 Firmware Flashing
 
-1. Connect the top Type-C port of the WonderLLM module to the computer using a USB cable.
+1. Connect the top Type-C interface of the WonderLLM module to the computer using a USB cable.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image.png" width="400"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image.png"  class="common_img" style="width:400px" >
 
-2. Open the file **flash_download_tool_3.9.7.exe** in the folder **[Appendix/2. WonderLLM Related Files/WonderLLM Flashing Tool/ESP32-S3 Firmware Flashing Tool](https://drive.google.com/drive/folders/1VT4wKRY0sFAQrTcgnuTOps3clNoc88w1?usp=sharing)**.
+2. Open the **flash_download_tool_3.9.7.exe** file in the folder **[3. Appendix\2. WonderLLM Related Files\WonderLLM Flashing Tool\ESP32-S3 Firmware Flashing Tool\flash_download_tool_3.9.7](https://drive.google.com/drive/folders/1VT4wKRY0sFAQrTcgnuTOps3clNoc88w1?usp=sharing)**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image1.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image1.png"  class="common_img" style="width:500px" >
 
-3. Select **ESP32-S3** as the **Chip Type**, leave other settings as default, and click **OK**.
+3. Select **ESP32-S3** for **ChipType**, keep default settings for others, then click **OK**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image2.png" width="400"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image2.png"  class="common_img" style="width:400px" >
 
-4. Once the tool opens, click **...** to select the firmware bin file. Choose **WonderLLM_Echo_K12.bin** from the folder **[Appendix/2. WonderLLM Related Files/WonderLLM Firmware File/Offline](https://drive.google.com/drive/folders/1aP3l_tDYIrCMCrs51QaVBYc_gvaAIAeg?usp=sharing)**.
+4. After opening the tool, click **...** to select the program bin file to flash: open the **WonderLLM_Echo_K12_EN.bin** file in the folder **[3. Appendix\2. WonderLLM Related Files\WonderLLM Firmware Files\Offline](https://drive.google.com/drive/folders/1aP3l_tDYIrCMCrs51QaVBYc_gvaAIAeg?usp=sharing)**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image3.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image3.png"  class="common_img" style="width:500px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image4.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image4.png"  class="common_img" style="width:800px" >
 
-5. Check the box on the left, configure the other settings as shown in the diagram below, and select the COM port occupied by the module. 
+5. Check the box on the left side and configure remaining settings according to the figure below. Select the COM port occupied by the module. 
 
-> [!NOTE]
->
-> **If the module does not work properly after flashing the firmware with SPI MODE set to DIO as shown in the diagram below, try setting SPI MODE to DOUT and flash again.**
+   > [!NOTE]
+   >
+   > **If configuring SPI MODE as DIO according to the figure results in abnormal module operation after firmware flashing, try configuring SPI MODE as DOUT and flash again.**
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image5.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image5.png"  class="common_img" style="width:500px" >
 
-6. Click **ERASE** first to erase the existing firmware, which is a mandatory step, and wait for the status bar to display **FINISH**.
+6. Click **ERASE** first to erase previously downloaded firmware, a mandatory step, and wait for the status bar to display **FINISH**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image6.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image6.png"  class="common_img" style="width:500px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image7.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image7.png"  class="common_img" style="width:500px" >
 
-7. Click **START** to flash the selected firmware, and wait for the progress bar to complete.
+7. Click **START** to download the selected firmware and wait for the progress bar to load, completing firmware downloading.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image8.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image8.png"  class="common_img" style="width:500px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image9.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_1/image9.png"  class="common_img" style="width:500px" >
 
-#### 2. CI1302 Firmware Flashing
+#### (2) CI1302 Firmware Flashing
 
-1. Connect the bottom Type-C port of the WonderLLM module to the computer using a USB cable.
+1. Connect the bottom Type-C interface of the WonderLLM module to the computer using a USB cable.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image.png" width="400"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image.png"  class="common_img" style="width:400px" >
 
-2. Open the file **PACK_UPDATE_TOOL.exe** in the folder **[Appendix/2. WonderLLM Related Files/WonderLLM Flashing Tool/CI1302 Firmware Flashing Tool](https://drive.google.com/drive/folders/1J_IZBq0eLWigoezojcnE9XaKbCIOjJLI?usp=sharing)**.
+2. Open the **PACK_UPDATE_TOOL.exe** file in the folder **[3. Appendix\2. WonderLLM Related Files\WonderLLM Flashing Tool\CI1302 Firmware Flashing Tool](https://drive.google.com/drive/folders/1J_IZBq0eLWigoezojcnE9XaKbCIOjJLI?usp=sharing)**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image1.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image1.png"  class="common_img" style="width:500px" >
 
-3. Select the **CI1302** chip and click **Upgrade**.
+3. Select the **CI1302** chip, then click **Update**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image2.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image2.png"  class="common_img" style="width:500px" >
 
-4. Click **Select firmware** and choose **CI1302_Echo_K12.bin** from the folder **[Appendix/2. WonderLLM Related Files/WonderLLM Firmware File/Offline](https://drive.google.com/drive/folders/1aP3l_tDYIrCMCrs51QaVBYc_gvaAIAeg?usp=sharing)**.
+4. Click **Select firmware** to select the program bin file to flash: open the **CI1302_K12_EN.bin** file in the folder **[3. Appendix\2. WonderLLM Related Files\WonderLLM Firmware Files\Offline](https://drive.google.com/drive/folders/1aP3l_tDYIrCMCrs51QaVBYc_gvaAIAeg?usp=sharing)**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image3.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image3.png"  class="common_img" style="width:500px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image4.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image4.png"  class="common_img" style="width:800px" >
 
-5. Find the corresponding COM port and select it.
+5. Locate the corresponding serial port and click to select.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image5.png" width="500"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image5.png"  class="common_img" style="width:500px" >
 
-6. Press and hold both the left and right buttons on the WonderLLM module simultaneously to start flashing, and wait for it to complete successfully.
+6. Next, **press and hold both left and right buttons A and B simultaneously** on the WonderLLM module to enter flashing mode, waiting for successful flashing.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image6.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image6.png"  class="common_img" style="width:300px" >
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image7.png" width="800"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_1/sub_2/image7.png"  class="common_img" style="width:800px" >
 
 ### 4.5.2 Voice Interaction Mode
 
-1. After updating both firmwares to the offline version, the module first enters the **Standby** state.
+1. After updating both firmwares to offline versions, the module first enters **Standby** state.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_2/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_2/image1.png"  class="common_img" style="width:300px" >
 
-2. In any mode, long-press the **right button** to enter Voice Interaction Mode.
+2. In any mode, **long press the right button, Button B** to enter voice interaction mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_2/image2.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_2/image2.png"  class="common_img" style="width:300px" >
 
-3. Speak the wake word **Hello Hiwonder** to enter **Voice Interaction Mode**. The module will reply, **I'm here**.
+3. Activate the module to enter **Voice Interaction Mode** by saying the wake word, **Hello Hiwonder**, and the module responds **I'm here**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_2/image3.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_2/image3.png"  class="common_img" style="width:300px" >
 
-4. After entering **Voice Interaction Mode**, the module responds with corresponding actions or responses based on voice commands. Common commands are listed below, and more can be found in the appendix.
+4. After entering voice interaction mode, the module provides directional message replies according to specified commands. Frequently used voice entries are listed below, with further detailed entries in the appendix.
 
-| Command ID | Command Word | Broadcast Phrase |
-| :---: | :--- | :--- |
-| / | HELLO-HI-WONDER | I'm here |
-| / | TURN-UP-VOLUME | Volume increase |
-| / | TURN-DOWN-VOLUME | Volume decrease |
-| / | MAXIMUM-VOLUME | Maximum volume |
-| / | MEDIUM-VOLUME | Medium volume |
-| / | MINIMUM-VOLUME | Minimum volume |
-| 26 | Hello | Hi |
-| 27 | INTRODUCE-YOURSELF | Hello, I'm Hiwonder, and I can talk and dance. |
-| 15 | WELCOME-YOU | Hello, welcome! |
-| 1 | GO-STRAIGHT | Going straight |
-| 2 | GO-BACKWARD | Going backward |
-| 3 | TURN-LEFT | Turning left |
-| 4 | TURN-RIGHT | Turning right |
-| 9 | Stop | Copy that |
-| 13 | SPEED-UP | Copy that |
-| 14 | SLOW-DOWN | Copy that |
-| 186 | MOVE-LEFT | Moving to the left |
-| 187 | MOVE-RIGHT | Moving to the right |
-| 18 | TURN-ON-THE-LIGHT | Turn on the light |
-| 19 | TURN-OFF-THE-LIGHT | Turn off the light |
-| 39 | GIVE-A-RED-LIGHT | Copy that |
-| 40 | GIVE-A-GREEN-LIGHT | Copy that |
-| 41 | GIVE-A-BLUE-LIGHT | Copy that |
-| 20 | OPEN-THE-DOOR | The door is open |
-| 21 | CLOSE-THE-DOOR | The door is closed |
-| 24 | UNFOLD-THE-AIRING-RACK | Copy that |
-| 25 | FOLD-THE-AIRING-RACK | Copy that |
-| 36 | TURN-ON-THE-FAN | Copy that |
-| 37 | TURN-OFF-THE-FAN | Copy that |
-| 38 | ROTATING-STEERING-GEAR | Copy that |
-| 181 | SHOW-HAPPY-EXPRESSION | Copy that |
-| 182 | SHOW-SAD-EXPRESSION | Copy that |
-| 183 | SHOW-HELPLESS-EXPRESSION | Copy that |
-| 184 | SHOW-EXPECTED-EXPRESSION | Copy that |
+| Voice ID | Command Word | Broadcast Phrase |
+| :---: | :---: | :---: |
+| / | Hello Hiwonder | I am here |
+| / | Volume up | Increasing volume |
+| / | Volume down | Decreasing volume |
+| / | Maximum volume | Maximum volume |
+| / | Medium volume | Medium volume |
+| / | Minimum volume | Minimum volume |
+| 26 | Hello | Hello |
+| 27 | Introduce yourself | I am Hiwonder robot, able to talk and dance |
+| 15 | Welcome | Hello, welcome |
+| 1 | Move forward | Moving forward |
+| 2 | Move backward | Moving backward |
+| 3 | Turn left | Turning left |
+| 4 | Turn right | Turning right |
+| 9 | Stop | Received |
+| 13 | Speed up | Speed up |
+| 14 | Speed down | Speed down |
+| 186 | Move left | Moving left |
+| 187 | Move right | Moving right |
+| 18 | Turn on light | Light on |
+| 19 | Turn off light | Light off |
+| 39 | Red light | Okay |
+| 40 | Green light | Okay |
+| 41 | Blue light | Okay |
+| 20 | Open door | Door opened |
+| 21 | Close door | Door closed |
+| 24 | Extend drying rack | Extended |
+| 25 | Retract drying rack | Retracted |
+| 36 | Turn on fan | Okay |
+| 37 | Turn off fan | Okay |
+| 38 | Rotate servo | Okay |
+| 181 | Happy expression | Okay |
+| 182 | Sad expression | Okay |
+| 183 | Helpless expression | Okay |
+| 184 | Expectant expression | Okay |
 
-5. After each round of interaction, including after waking up the module, the module continues to listen. If no speech is recognized within 1 minute, the module automatically stops listening and switches to the standby/sleep interface. To resume, wake up the module again by **speaking the wake word**.
+5. After each round of interaction dialogue finishes, including after waking up WonderLLM, the module continues listening. If no spoken content is recognized within 1 continuous minute, listening stops automatically and the module switches to the sleep interface automatically. To continue interaction, wake up the module again by **saying the specified wake word**.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_2/image4.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_2/image4.png"  class="common_img" style="width:300px" >
 
 ### 4.5.3 Face Recognition Mode
 
-In any mode, long-press the **right button** to enter Face Recognition mode.
+In any mode, **short press the right button, Button B** to enter face recognition mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_3/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_3/image1.png"  class="common_img" style="width:300px" >
 
 ### 4.5.4 Color Recognition Mode
 
-In any mode, short-press the **left button** to enter Color Recognition mode.
+In any mode, **short press the left button, Button A** to enter color recognition mode.
 
-<div align="center"><img src="../_static/media/chapter_4/section_5/media/subsection_4/image1.png" width="300"></div>
+<img src="../_static/media/chapter_4/section_5/media/subsection_4/image1.png"  class="common_img" style="width:300px" >
 
-The color IDs correspond to the colors as follows:
+Color IDs correspond to colors as follows:
 
 | Color ID | Color |
 | :---: | :---: |
@@ -899,3 +1136,6 @@ The color IDs correspond to the colors as follows:
 | 3 | Green |
 | 4 | Blue |
 | 5 | Black |
+
+
+
