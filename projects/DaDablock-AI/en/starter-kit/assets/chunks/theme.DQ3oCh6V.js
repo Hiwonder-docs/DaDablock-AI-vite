@@ -3639,7 +3639,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       latest: "Latest",
       "starter-kit": "Starter Kit",
       "standard-kit": "Standard Kit",
-      "ultimate-kit": "Ultimate Kit"
+      "ultimate-kit": "Advanced Kit"
     };
     function detectDocumentationVersion() {
       const pathname = inBrowser ? location.pathname : withBase("/");
